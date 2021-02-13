@@ -1,0 +1,40 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Roboto", Verdana, sans-serif;
+}
+
+.wrapper {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: rgba(232, 232, 232, 1);
+  background: linear-gradient(
+    30deg,
+    rgba(108, 122, 137, 1) 0%,
+    rgba(46, 49, 49, 1) 100%,
+    rgba(191, 191, 191, 1) 100%
+  );
+}
+
+.container {
+  padding-top: 5rem;
+  width: 80%;
+  min-width: 370px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.top-nav {
+  background-color: cyan;
+}
+
+.main {
+  background-color: limegreen;
+}
+
+.toolbox {
+  background-color: coral;
+}
