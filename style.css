@@ -28,13 +28,16 @@ body {
 }
 
 .top-nav {
+  min-height: 50px;
   background-color: cyan;
 }
 
 .main {
+  min-height: 80%;
   background-color: limegreen;
 }
 
 .toolbox {
+  min-height: 50px;
   background-color: coral;
 }
