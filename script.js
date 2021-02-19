@@ -1,26 +1,16 @@
 const main = document.querySelector(".main");
 
-function makeGrid(rows, cols) {
-  main.style.setProperty("--grid-rows", rows);
-  main.style.setProperty("--grid-cols", cols);
-  for (let i = 0; i < rows * cols; i++) {
-    let cell = document.createElement("div");
-    cell.innerText = "";
-    main.appendChild(cell).className = "grid-item";
+window.addEventListener("load", defaultSize);
+
+function defaultSize() {
+  makeGrid(16);
+}
+function makeGrid(val) {
+  let gridSize = val * val;
+  main.style.gridTemplateColumns = `repeat(${val}, 1fr)`;
+  for (let i = 0; i < gridSize; i++) {
+    const gridItem = document.createElement("div");
+    gridItem.classList = "grid-item";
+    main.appendChild(gridItem);
   }
 }
-
-// function makeGrid(num) {
-//   const e = document.querySelector(".main");
-//   for (let i = 0; i < num; i++) {
-//     let row = document.createElement("div");
-//     row.className = "row";
-//     for (let j = 1; j <= num; j++) {
-//       let cell = document.createElement("div");
-//       cell.className = "cell";
-//       cell.innerText = i * num + j;
-//       row.appendChild(cell);
-//     }
-//     e.appendChild(row);
-//   }
-// }
