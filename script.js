@@ -30,7 +30,7 @@ function removeGrid() {
 function createNewGrid() {
   let newGrid = prompt("Please enter a value between 1 and 64");
 
-  if (newGrid < 1 || newGrid > 64 || isNaN(newGrid)) {
+  if (newGrid < 1 || newGrid > 100 || isNaN(newGrid)) {
     alert("Error! Please enter a number between 1 and 64.");
     createNewGrid();
   } else {
