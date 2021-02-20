@@ -6,23 +6,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Etch-A-Sketch</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
       rel="stylesheet"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <div class="wrapper">
-      <div class="container">
+  <body class="wrapper">
+    <div class="container">
+      <div class="border">
         <div class="top-nav">
-          <input
-            type="button"
-            onclick="makeGrid(64, 64)"
-            value="Generate 16x16 Grid"
-          />
+          <h1>
+            <span class="smallFont"><em>Magic</em></span>
+            <span class="bigFont">Etch-A-Sketch</span>
+            <span class="smallerFont">&#174</span>
+            <span class="smallFont"><em>Screen</em></span>
+          </h1>
         </div>
         <div class="main"></div>
-        <div class="toolbox">Toolbox</div>
+        <div class="toolbox">
+          <button id="new-grid" class="button">New Grid</button>
+          <button id="standard" class="button">Standard</button>
+          <button id="rainbow" class="button">Rainbow</button>
+        </div>
       </div>
     </div>
     <script src="script.js"></script>
