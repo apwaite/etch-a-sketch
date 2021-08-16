@@ -133,6 +133,10 @@ footer {
   padding: 0.25rem;
 }
 
+footer strong {
+  line-height: 0.9rem;
+}
+
 .fa-github {
   padding-left: 1rem;
   color: var(--shared-color-2);
