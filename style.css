@@ -5,10 +5,12 @@
   --border-bg: #b20000;
   --shared-color-1: #ffffff;
   --shared-color-2: #000000;
-  --shared-color-3: ##cccccc;
+  --bg-main: #cccccc;
   --bg-gradient-1: #6c7a89;
   --bg-gradient-2: #313131;
   --bg-gradient-3: #cccccc;
+  --bg-button-hover: #cccccc;
+  --bg-button-active: #d3d3d3;
   --border-color: #000000;
 }
 
@@ -84,7 +86,7 @@ h1 {
 
 .main {
   display: grid;
-  background: var(--shared-color-3);
+  background: var(--bg-main);
   min-height: 600px;
   max-width: 600px;
   margin: auto;
@@ -116,11 +118,11 @@ h1 {
 }
 
 .button:hover {
-  background: var(--shared-color-3);
+  background: var(--bg-button-hover);
 }
 
 .active {
-  background: var(--shared-color-3);
+  background: var(--bg-button-active);
   box-shadow: inset -0.5rem -0.5rem 0.5rem 0 var(--shared-color-1),
     inset 0.25rem 0.25rem 0.25rem 0 var(--shared-color-2);
 }
