@@ -1,4 +1,6 @@
-@import url("//use.fontawesome.com/releases/v5.0.7/css/all.css");
+@import url('//use.fontawesome.com/releases/v5.0.7/css/all.css');
+
+/* TODO: Add mobile responsive functionality */
 
 :root {
   --h1-color: #d4af37;
@@ -18,7 +20,7 @@ body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: "Roboto", Verdana, sans-serif;
+  font-family: 'Roboto', Verdana, sans-serif;
 }
 
 .wrapper {
@@ -61,7 +63,7 @@ body {
 
 h1 {
   word-spacing: 2rem;
-  font-family: "Pacifico", sans-serif;
+  font-family: 'Pacifico', sans-serif;
   font-weight: bold;
   color: var(--h1-color);
   text-shadow: 1px 2px var(--bg-gradient-2);
@@ -74,7 +76,7 @@ h1 {
 }
 
 .smallFont {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 1.5rem;
 }
 
